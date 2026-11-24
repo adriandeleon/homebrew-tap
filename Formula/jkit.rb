@@ -3,7 +3,7 @@ class Jkit < Formula
   desc "Installs and switches JDKs, Maven, Gradle and sbt"
   homepage "https://jkit-project.dev"
   # stated, not scanned from the URL: "jkit-0.3.0-linux-aarch64" holds other numbers too
-  version "0.3.0"
+  version "0.4.0"
   # jkit's own code is MIT; the binary also carries the libraries and Java runtime parts listed
   # in THIRD-PARTY-NOTICES (the main licenses; the notices file has every one)
   license all_of: [
@@ -25,23 +25,23 @@ class Jkit < Formula
     depends_on macos: :sequoia
 
     on_arm do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.3.0/jkit-0.3.0-macos-aarch64.tar.gz"
-      sha256 "8d60e368b79c48c889aa4a6234e97282764a4904875735bb9f95533c1f105b92"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.4.0/jkit-0.4.0-macos-aarch64.tar.gz"
+      sha256 "d3bbad474e8caa1c48a6f065b171e4c16c70d0b31749921f8a6a137eef1caba5"
     end
     on_intel do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.3.0/jkit-0.3.0-macos-x64.tar.gz"
-      sha256 "187688c32cd91bfb9eb23e864f47d98a6a36b45c7f55120f99bd96524d70e961"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.4.0/jkit-0.4.0-macos-x64.tar.gz"
+      sha256 "953e514c1cc5307ce7fe6a6b57ee8dd69415aaebd55c7f686e67fd11def8b189"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.3.0/jkit-0.3.0-linux-aarch64.tar.gz"
-      sha256 "5aedd2c685e2a410c40ee3dd6ab62b205a49e4284eb96e18044089fc2458de4d"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.4.0/jkit-0.4.0-linux-aarch64.tar.gz"
+      sha256 "23ae76d884dd6707b2bb83b30ce70fb32e21e4c47cba936f8270a69272fab263"
     end
     on_intel do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.3.0/jkit-0.3.0-linux-x64.tar.gz"
-      sha256 "44c7ac1f282e769009c11f02e1849ce236f11568bf33fa131d560328afafa151"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.4.0/jkit-0.4.0-linux-x64.tar.gz"
+      sha256 "11637416849748f3b889cd9385d63cb3ee1d7dcf73a74d7ce3e88a73512ae09c"
     end
   end
 

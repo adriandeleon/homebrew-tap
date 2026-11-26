@@ -9,6 +9,8 @@ cask "termina" do
   sha256 "a5ded828fa340842725f1dc93d174e5f29702ade99b52c44c4521afe363fc9b9"
   name "Termina"
 
+  depends_on arch: :arm64
+
   app "Termina.app"
 
   zap trash: [

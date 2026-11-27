@@ -3,7 +3,7 @@ class Jkit < Formula
   desc "Installs and switches JDKs, Maven, Gradle and sbt"
   homepage "https://jkit-project.dev"
   # stated, not scanned from the URL: "jkit-0.3.0-linux-aarch64" holds other numbers too
-  version "0.5.0"
+  version "0.6.0"
   # jkit's own code is MIT; the binary also carries the libraries and Java runtime parts listed
   # in THIRD-PARTY-NOTICES (the main licenses; the notices file has every one)
   license all_of: [
@@ -25,23 +25,23 @@ class Jkit < Formula
     depends_on macos: :sonoma
 
     on_arm do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.5.0/jkit-0.5.0-macos-aarch64.tar.gz"
-      sha256 "03c024e9a8d8a3b5b2acf8977d40b1da3489bd400545357ff9e22b0872b2f439"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.6.0/jkit-0.6.0-macos-aarch64.tar.gz"
+      sha256 "a5d87d504f12bfc118e74fb1ebf0414949709c7576f620cabbc8420635213b05"
     end
     on_intel do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.5.0/jkit-0.5.0-macos-x64.tar.gz"
-      sha256 "17a591078b8ae3e7681ebc6fae08a16d39ebcebc3abd00c85365cc419e3dc9d5"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.6.0/jkit-0.6.0-macos-x64.tar.gz"
+      sha256 "f9895f6f06584140b15c65e8281f8961ee3bbe3f4eb8c4737803fddb05f12b43"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.5.0/jkit-0.5.0-linux-aarch64.tar.gz"
-      sha256 "844287cd66d45a6621676489a8fec26fd0fd176ba75c63d214a2c74c0ffa9c25"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.6.0/jkit-0.6.0-linux-aarch64.tar.gz"
+      sha256 "42a0b1c673a5e4094f1e03efe2e13787b73fcb478926da3fba59d5489cf79b75"
     end
     on_intel do
-      url "https://github.com/adriandeleon/jkit/releases/download/v0.5.0/jkit-0.5.0-linux-x64.tar.gz"
-      sha256 "255d16dc3d9f34b5268bad922eacad86dcb54465da13fbbda871e3162dbc56be"
+      url "https://github.com/adriandeleon/jkit/releases/download/v0.6.0/jkit-0.6.0-linux-x64.tar.gz"
+      sha256 "b6877213a7afa5269c7bd7bf98d5f17dac7f5691581c8366c73eb698a19bfa00"
     end
   end
 
